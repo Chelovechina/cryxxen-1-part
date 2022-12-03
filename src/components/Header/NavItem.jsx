@@ -1,7 +1,9 @@
+import styles from './Header.module.scss';
+
 const NavItem = ({ text }) => {
   return (
-    <li className="nav__item">
-      <a href="#" className="nav__link">
+    <li className={styles.nav__item}>
+      <a href="#" className={styles.nav__link}>
         {text}
       </a>
     </li>

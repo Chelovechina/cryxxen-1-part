@@ -1,0 +1,60 @@
+@import "./../../scss/variables";
+
+.header {
+  border-bottom: 1px solid $gray-light;
+}
+.nav {
+  padding: 0 45px;
+  display: flex;
+  align-items: center;
+  height: 78px;
+
+  &__brands {
+    display: flex;
+    gap: 18px;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 40px;
+  }
+  &__list {
+    display: flex;
+  }
+  &__left {
+    gap: 22px;
+  }
+  &__right {
+    gap: 30px;
+  }
+  &__link {
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: $black-light;
+    text-decoration: none;
+    transition: opacity 0.25s ease-in-out;
+
+    &:hover {
+      opacity: 0.85;
+    }
+  }
+  &__btn {
+    margin-left: 10px;
+    font-family: "Nunito", sans-serif;
+    padding: 12px 32px;
+    border: 1px solid $black;
+    color: $black-light;
+    border-radius: 48px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    transition: background-color 0.25s ease-in-out;
+
+    &:hover {
+      background-color: $black-light;
+      color: $white;
+    }
+  }
+}

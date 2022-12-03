@@ -1,5 +1,5 @@
 import NavItem from './NavItem';
-import './Header.scss';
+import styles from './Header.module.scss';
 
 import mastercard from './../../assets/logos/mastercard.svg';
 import zen from './../../assets/logos/zen.svg';
@@ -9,25 +9,25 @@ const navRight = ['Zenefits', 'Features', 'Pricing'];
 
 const Header = () => {
   return (
-    <header className="header">
+    <header className={styles.header}>
       <div className="container">
-        <nav className="header__nav nav">
-          <a href="#" className="nav__brands">
-            <img src={zen} alt="Zen Logo" className="zen-logo" />
-            <img src={mastercard} alt="Master Card Logo" className="mc-logo" />
+        <nav className={styles.nav}>
+          <a href="#" className={styles.nav__brands}>
+            <img src={zen} alt="Zen Logo" />
+            <img src={mastercard} alt="Master Card Logo" />
           </a>
-          <div className="nav__wrapper">
-            <ul className="nav__left nav__list">
+          <div className={styles.nav__wrapper}>
+            <ul className={`${styles.nav__left} ${styles.nav__list}`}>
               {navLeft.map((item) => (
                 <NavItem key={item} text={item} />
               ))}
             </ul>
-            <ul className="nav__right nav__list">
+            <ul className={`${styles.nav__right} ${styles.nav__list}`}>
               {navRight.map((item) => (
                 <NavItem key={item} text={item} />
               ))}
-              <li className="nav__item">
-                <a href="#" className="nav__btn">
+              <li className={styles.nav__item}>
+                <a href="#" className={styles.nav__btn}>
                   Get app
                 </a>
               </li>
