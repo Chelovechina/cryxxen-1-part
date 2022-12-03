@@ -1,0 +1,10 @@
+@import "./reset";
+@import "./variables";
+
+.body {
+  font-family: "Nunito", sans-serif;
+}
+.container {
+  max-width: $lg-container;
+  margin: 0 auto;
+}
