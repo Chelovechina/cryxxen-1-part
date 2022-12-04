@@ -1,10 +1,10 @@
-import styles from './FirstSection.module.scss';
+import styles from './Body.module.scss';
 import img from './../../assets/images/1.png';
 import play from './../../assets/play-btn.svg';
 import appStore from './../../assets/appstore-btn.svg';
 import googlePlay from './../../assets/googleplay-btn.svg';
 
-const FirstSection = () => {
+const Body = () => {
   return (
     <section className={styles.section}>
       <div className="container">
@@ -38,4 +38,4 @@ const FirstSection = () => {
   );
 };
 
-export default FirstSection;
+export default Body;

@@ -1,11 +1,11 @@
-import FirstSection from './components/FirstSection/FirstSection';
 import Header from './components/Header/Header';
+import Body from './components/Body/Body';
 
 function App() {
   return (
     <>
       <Header />
-      <FirstSection />
+      <Body />
     </>
   );
 }
