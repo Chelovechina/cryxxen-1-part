@@ -205,3 +205,192 @@
     text-decoration: none;
   }
 }
+
+@media (max-width: 1200px) {
+  .sectionWrapper {
+    gap: 100px;
+  }
+  .firstSectionWrapper {
+    padding: 0 45px;
+  }
+  .firstInfo {
+    margin: 60px 50px 0 0;
+    width: 50%;
+
+    & .title {
+      font-size: 35px;
+      line-height: 40px;
+      margin-bottom: 15px;
+    }
+    & .subtext {
+      font-size: 14px;
+      line-height: 20px;
+    }
+    & .play {
+      margin-bottom: 15px;
+    }
+  }
+
+  .secondSection {
+    margin: 50px 0;
+  }
+  .secondInfo {
+    width: 50%;
+    margin-top: 150px;
+  }
+
+  .thirdSection {
+    margin-bottom: 100px;
+  }
+  .thirdInfo {
+    width: 50%;
+    margin-top: 150px;
+  }
+
+  .fifthSection {
+    margin-bottom: 90px;
+  }
+  .fifthInfo {
+    width: 50%;
+  }
+
+  .sixthInfo {
+    width: 50%;
+  }
+
+  .seventhSection {
+    margin-bottom: 90px;
+  }
+  .seventhInfo {
+    width: 50%;
+  }
+
+  .eighthInfo {
+    width: 50%;
+  }
+
+  .partnersList {
+    padding: 0;
+    grid-template-columns: repeat(4, auto);
+  }
+  .parner {
+    width: 150px;
+    height: 50px;
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .thirdInfo,
+  .sixthInfo,
+  .seventhInfo {
+    margin-top: 80px;
+  }
+  .forthInfo {
+    margin-bottom: 20px;
+  }
+  .fifthInfo {
+    margin-top: 80px;
+
+    & .icon {
+      right: 0px;
+    }
+  }
+  .eighthInfo {
+    margin-top: 0;
+  }
+  .partnersList {
+    padding: 0;
+    column-gap: 40px;
+    row-gap: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .sectionWrapper {
+    gap: 50px;
+  }
+  .firstInfo {
+    margin: 50px 20px 0 0;
+    width: 50%;
+
+    & .play {
+      margin-bottom: 8px;
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    & .title {
+      font-size: 26px;
+      line-height: 28px;
+      margin-bottom: 10px;
+    }
+    & .subtext {
+      font-size: 14px;
+      line-height: 20px;
+    }
+    & .btns {
+      gap: 5px;
+    }
+    & .btn {
+      width: 125px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .secondInfo,
+  .thirdInfo,
+  .forthInfo,
+  .fifthInfo,
+  .sixthInfo,
+  .seventhInfo,
+  .eighthInfo {
+    margin-top: 50px;
+  }
+  .thirdSection {
+    margin-bottom: 30px;
+  }
+  .parner {
+    width: 100px;
+  }
+  .fifthInfo {
+    & .text {
+      margin-bottom: 15px;
+    }
+  }
+  .payments {
+    gap: 5px;
+  }
+  .payment {
+    width: 70px;
+    img {
+      width: 100%;
+    }
+  }
+  .eighthInfo {
+    & .title {
+      margin-bottom: 15px;
+    }
+    & .text1 {
+      margin-bottom: 5px;
+    }
+    & .text2 {
+      margin-bottom: 10px;
+    }
+    & .btns {
+      flex-direction: column;
+      gap: 5px;
+    }
+    & .btn {
+      width: 125px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

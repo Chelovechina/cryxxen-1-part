@@ -52,7 +52,7 @@ const Body = () => {
                 </a>
               </div>
             </div>
-            <div className={styles.firstImg}>
+            <div className="sectionImg">
               <img src={img1} alt="Zen app" />
             </div>
           </div>
@@ -62,7 +62,7 @@ const Body = () => {
       <section className={styles.secondSection}>
         <div className="container">
           <div className={styles.sectionWrapper}>
-            <div className={styles.secondImg}>
+            <div className="sectionImg">
               <img src={img2} alt="Zen app" />
             </div>
             <div className={styles.secondInfo}>
@@ -86,11 +86,11 @@ const Body = () => {
             <div className={styles.thirdInfo}>
               <h2 className={`sectionTitle ${styles.title}`}>ZEN Care</h2>
               <p className={`text ${styles.text1}`}>
-                Shopping online is usually a delightful experience. Until <br /> it's not.
+                Shopping online is usually a delightful experience. Until it's not.
               </p>
               <p className={`text ${styles.text2}`}>
-                Until something you buy, proves to be faulty, <br /> missing or a totally wrong
-                item, you’re in for <br /> long product return procedures.
+                Until something you buy, proves to be faulty, missing or a totally wrong item,
+                you’re in for long product return procedures.
               </p>
               <p className="text">
                 But, here comes ZEN Care: a free, built-in shopping protection. You can rest assured
@@ -99,7 +99,7 @@ const Body = () => {
                 doesn't get discouraged. ZEN persists.
               </p>
             </div>
-            <div className={styles.thirdImg}>
+            <div className="sectionImg">
               <img src={img3} alt="Zen app" />
             </div>
           </div>
@@ -175,7 +175,7 @@ const Body = () => {
                 </a>
               </div>
             </div>
-            <div className={styles.fifthImg}>
+            <div className="sectionImg">
               <img src={img4} alt="Zen app" />
             </div>
           </div>
@@ -185,7 +185,7 @@ const Body = () => {
       <section className={styles.sixthSection}>
         <div className="container">
           <div className={styles.sectionWrapper}>
-            <div className={styles.sixthImg}>
+            <div className="sectionImg">
               <img src={img5} alt="Zen app" />
             </div>
             <div className={styles.sixthInfo}>
@@ -221,7 +221,7 @@ const Body = () => {
                 them easily in many ways.
               </p>
             </div>
-            <div className={styles.seventhImg}>
+            <div className="sectionImg">
               <img src={img6} alt="Zen app" />
             </div>
           </div>
@@ -231,7 +231,7 @@ const Body = () => {
       <section className={styles.eighthSection}>
         <div className="container">
           <div className={styles.sectionWrapper}>
-            <div className={styles.eighthImg}>
+            <div className="sectionImg">
               <img src={img7} alt="Zen app" />
             </div>
             <div className={styles.eighthInfo}>

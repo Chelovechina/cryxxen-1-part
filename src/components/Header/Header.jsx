@@ -11,6 +11,7 @@ const navRight = ['Zenefits', 'Features', 'Pricing'];
 
 const Header = () => {
   const [width, setWidth] = useState(window.screen.width);
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const intervalID = setInterval(() => {
@@ -30,7 +31,7 @@ const Header = () => {
             <img src={zen} alt="Zen Logo" />
             <img src={mastercard} alt="Master Card Logo" />
           </a>
-          <div className={styles.nav__wrapper}>
+          <div className={isOpen ? `${styles.active} ${styles.nav__wrapper}` : styles.nav__wrapper}>
             <ul className={`${styles.nav__left} ${styles.nav__list}`}>
               {navLeft.map((item) => (
                 <NavItem key={item} text={item} />
@@ -46,8 +47,8 @@ const Header = () => {
                 </a>
               </li>
             </ul>
-            {width <= 622 ? <Burger /> : null}
           </div>
+          {width <= 800 ? <Burger callback={setIsOpen} isOpen={isOpen} /> : null}
         </nav>
       </div>
     </header>

@@ -1,6 +1,10 @@
-const Burger = () => {
+const Burger = ({ callback, isOpen }) => {
+  const handleClick = () => {
+    callback(!isOpen);
+  };
+
   return (
-    <div className="burger">
+    <div onClick={handleClick} className="burger">
       <span></span>
       <span></span>
       <span></span>
