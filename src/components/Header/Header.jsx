@@ -3,11 +3,25 @@ import styles from './Header.module.scss';
 
 import mastercard from './../../assets/logos/mastercard.svg';
 import zen from './../../assets/logos/zen.svg';
+import Burger from './Burger';
+import { useEffect, useState } from 'react';
 
 const navLeft = ['Personal', 'Business'];
 const navRight = ['Zenefits', 'Features', 'Pricing'];
 
 const Header = () => {
+  const [width, setWidth] = useState(window.screen.width);
+
+  useEffect(() => {
+    const intervalID = setInterval(() => {
+      if (width !== window.screen.width) setWidth(window.screen.width);
+    }, 1000);
+
+    return () => {
+      clearInterval(intervalID);
+    };
+  }, []);
+
   return (
     <header className={styles.header}>
       <div className="container">
@@ -32,6 +46,7 @@ const Header = () => {
                 </a>
               </li>
             </ul>
+            {width <= 622 ? <Burger /> : null}
           </div>
         </nav>
       </div>

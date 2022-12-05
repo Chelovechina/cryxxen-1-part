@@ -1,0 +1,51 @@
+@import "./../../scss/_variables";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+  border-top: 1px solid #cbd6e2;
+  padding: 69px 45px 65px 45px;
+}
+.top {
+  display: flex;
+  gap: 9.59px;
+}
+.column {
+  width: 210px;
+}
+.title {
+  font-size: 16px;
+  line-height: 22px;
+  color: $black-light;
+  margin-bottom: 33px;
+}
+
+.linksList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.link {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 19px;
+  color: $black;
+  transition: text-decoration 0.3s ease-in-out;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.zenZero {
+  margin-bottom: 20px;
+}
+.info {
+  display: flex;
+  align-items: center;
+  gap: 188px;
+  font-size: 12px;
+  line-height: 16px;
+  color: $gray;
+}

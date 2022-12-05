@@ -1,0 +1,207 @@
+@import "./../../scss/_variables";
+
+.sectionWrapper {
+  padding: 0 45px;
+  display: flex;
+  gap: 135px;
+}
+
+.firstSection {
+  margin-top: 40px;
+}
+.firstSectionWrapper {
+  padding: 0 45px 0 26px;
+  display: flex;
+}
+.firstInfo {
+  margin: 164px 135px 0 0;
+
+  & .play {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 31px;
+  }
+  & .subtext {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  & .title {
+    font-size: 42px;
+    line-height: 50px;
+    color: $black-light;
+    margin-bottom: 23px;
+  }
+  & .btns {
+    margin-top: 12.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+  & .btn {
+    text-decoration: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.secondSection {
+  margin: 95px 0 126px 0;
+}
+.secondInfo {
+  margin-top: 313.5px;
+  & .title {
+    margin-bottom: 22px;
+  }
+  & .text {
+    margin-bottom: 12px;
+  }
+}
+
+.thirdSection {
+  margin-bottom: 208px;
+}
+.thirdInfo {
+  margin-top: 197.5px;
+
+  & .title {
+    margin-bottom: 22px;
+  }
+  & .text1 {
+    margin-bottom: 12.5px;
+  }
+  & .text2 {
+    margin-bottom: 19.5px;
+  }
+}
+
+.forthSection {
+  margin-bottom: 47px;
+}
+.forthSectionWrapper {
+  padding: 0 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.forthInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 46px;
+
+  & .text {
+    max-width: 584px;
+    text-align: center;
+  }
+}
+.forthBtn {
+  padding: 12px 32px;
+  text-decoration: none;
+  color: $black-light;
+  border-radius: 48px;
+  border: 1px solid $black;
+  transition: background-color 0.25s ease-in-out;
+  margin-bottom: 30px;
+
+  &:hover {
+    background-color: $black-light;
+    color: $white;
+  }
+}
+.partnersList {
+  padding: 30px 0 30px 42px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 193px);
+  column-gap: 107px;
+  row-gap: 60px;
+}
+.parner {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fifthSection {
+  margin-bottom: 130px;
+}
+.fifthInfo {
+  margin-top: 202px;
+  position: relative;
+
+  & .title {
+    margin-bottom: 22px;
+  }
+  & .icon {
+    position: absolute;
+    top: 0;
+    right: 22px;
+    font-size: 27px;
+    line-height: 0px;
+    color: $black-light;
+  }
+  & .text {
+    margin-bottom: 28px;
+  }
+}
+.payments {
+  display: flex;
+  gap: 20px;
+}
+
+.sixthSection {
+  margin-bottom: 116px;
+}
+.sixthInfo {
+  margin-top: 144.5px;
+
+  & .title {
+    margin-bottom: 22px;
+  }
+  & .text {
+    margin-bottom: 10.5px;
+  }
+}
+
+.seventhSection {
+  margin-bottom: 149px;
+}
+.seventhInfo {
+  margin-top: 173px;
+
+  & .title {
+    margin-bottom: 19px;
+  }
+  & .text {
+    margin-bottom: 15px;
+  }
+}
+
+.eighthSection {
+  margin-bottom: 125px;
+}
+.eighthInfo {
+  margin-top: 85.5px;
+
+  & .title {
+    margin-bottom: 22px;
+  }
+  & .text1 {
+    margin-bottom: 12px;
+  }
+  & .text2 {
+    margin-bottom: 32px;
+  }
+  & .btns {
+    display: flex;
+    gap: 20px;
+  }
+  & .btn {
+    text-decoration: none;
+  }
+}
