@@ -70,6 +70,7 @@
   }
   .nav__wrapper {
     position: absolute;
+    visibility: hidden;
     top: 0;
     right: -150%;
     flex-direction: column;
@@ -84,6 +85,7 @@
 
     &.active {
       right: 0px;
+      visibility: visible;
     }
   }
   .nav__list {

@@ -62,8 +62,15 @@ body {
   }
   .sectionImg {
     width: 60%;
+    align-self: flex-end;
     img {
       width: 100%;
     }
+  }
+}
+
+@media (max-width: 800px) {
+  .sectionImg {
+    display: none;
   }
 }

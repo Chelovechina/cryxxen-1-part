@@ -394,3 +394,30 @@
     }
   }
 }
+
+@media (max-width: 800px) {
+  .sectionWrapper,
+  .firstSectionWrapper {
+    justify-content: center;
+  }
+  .firstInfo,
+  .secondInfo,
+  .thirdInfo,
+  .forthInfo,
+  .fifthInfo,
+  .sixthInfo,
+  .seventhInfo,
+  .eighthInfo {
+    width: 80%;
+    margin-right: 0;
+  }
+  .partnersList {
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-around;
+    column-gap: 0;
+    row-gap: 20px;
+  }
+  .icon {
+    display: none;
+  }
+}

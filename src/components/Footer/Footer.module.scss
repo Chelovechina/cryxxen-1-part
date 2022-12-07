@@ -49,3 +49,25 @@
   line-height: 16px;
   color: $gray;
 }
+
+@media (max-width: 800px) {
+  .top {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    row-gap: 50px;
+    justify-content: space-between;
+  }
+  .column {
+    width: auto;
+  }
+  .title {
+    margin-bottom: 15px;
+  }
+  .linksList {
+    margin-bottom: 10px;
+  }
+  .info {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
